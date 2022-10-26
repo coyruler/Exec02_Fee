@@ -29,28 +29,25 @@ namespace 計算車資
 			if (age <= 3)
 			{
 				fee = 0;
-				lblFee.Text = fee.ToString();
 				lblReason.Text = "未超過3歲";
 			}
 			else if (gender == true && age >= 70)
 			{
 				fee = 2;
-				lblFee.Text = fee.ToString();
 				lblReason.Text = "70歲以上男性";
 			}
 			else if (gender == false && age >= 60)
 			{
 				fee = 3;
-				lblFee.Text = fee.ToString();
 				lblReason.Text = "60歲以上女性";
 			}
 			else
 			{
 				fee = 15;
-				lblFee.Text = fee.ToString();
 				lblReason.Text = "不符合優惠資格";
 			}
 
+			lblFee.Text = fee.ToString();
 			lblFee.Visible = true;
 			lblReason.Visible = true;
 		}
